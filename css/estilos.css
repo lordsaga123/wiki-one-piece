@@ -1,0 +1,288 @@
+@font-face{
+    font-family: "onepiece";
+    src: url("../fonts/one-piece-font.ttf");
+}
+
+/* Titulos HTML */
+.titulo__h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: onepiece;
+    font-size: 4rem;
+}
+
+/* Estilos Página Inicio */
+.titulo-index{
+    font-family: onepiece;
+    font-size: 5rem;
+}
+.foto__Carrusel{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 0%;
+}
+.carrusel__Container{
+    position: relative;
+}
+
+.parrafo__Carrusel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     text-align: center;   
+}
+.fondo__Carrusel:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../img/portadaOP.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+.fondo__Carrusel:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../img/carrusel-2.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+.fondo__Carrusel:nth-child(3){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../img/carrusel-3.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+.fondo__Carrusel:nth-child(4){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../img/carrusel-4.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+.fondo__Carrusel:nth-child(5){
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5))
+    ,url(../img/carrusel-5.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+/* Estilos Sombreros de Paja */
+.titulo-tripulacion{
+    font-family: onepiece;
+    font-size: 4rem;
+}
+.mugiwara{
+    font-family: onepiece;
+    font-size: 4rem;
+}
+header{
+    font-size: 2rem;
+}
+.tripulacion{
+    display: flex;
+    height: 75vh;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tripulacion div{
+    width: 0px;
+    overflow: hidden;
+    flex-grow: 1;
+    opacity: .8;
+    transition: .5s ease;
+}
+.tripulacion div:hover{
+    width: 375px;
+    opacity: 1;
+    filter: contrast(140%);
+}
+.tripulacion img{
+    object-fit: cover;
+    height: 100%;
+}
+.link__Luffy{
+    text-decoration: none;
+    font-style: oblique;
+    }
+
+/* Botón Volver datos de los personajes de One Piece */
+.boton__Volver:hover{
+    background-color: rgb(149, 0, 255);
+    box-shadow: 0px 30px 40px
+    rgba(59, 217, 91, 0.4);
+    color: aliceblue;
+    transform: translateY(-7px);
+}
+.boton__Volver:active{
+    transform: translateY(-1px);
+}
+.boton__Carrusel{
+    font-size: 250%;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+/* Aquí estará el estilo de la página"Frutas del Diablo" con Flex-Box y Grid */
+.frutas__Del__Diablo {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "p1 img"
+      "p2 img"
+      "p3 img"
+      "p4 img"
+      "p5 img";
+}
+      
+  .parrafo__Frutas__Del__Diablo:nth-child(1) {
+    grid-area: p1;
+}
+      
+.parrafo__Frutas__Del__Diablo:nth-child(2) {
+    grid-area: p2;
+}
+      
+.parrafo__Frutas__Del__Diablo:nth-child(3) {
+    grid-area: p3;
+}
+      
+.parrafo__Frutas__Del__Diablo:nth-child(4) {
+    grid-area: p4;
+}
+      
+.parrafo__Frutas__Del__Diablo:nth-child(5) {
+    grid-area: p5;
+}
+      
+.imegen__Frutas__Del__Diablo {
+    grid-area: img;
+}
+      
+.cuadro__Frutas__Del__Diablo {
+    width: 100%;
+    height: auto;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "onepiece";
+    font-size: 4rem;
+}
+.texto__Parrafo{
+    padding: 12px;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 760px) {
+    .frutas__Del__Diablo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .parrafo__Frutas__Del__Diablo {
+      grid-area: unset;
+      margin-bottom: 20px;
+    }
+  
+    .imegen__Frutas__Del__Diablo {
+      margin-top: 20px;
+    }
+}
+/* Fin del Grid */
+
+
+/* Estilos de la Sección CONTACTO */
+.contenedor{
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo__Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: onepiece;
+    font-size: 4rem;
+}
+.texto__Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+.contenedor__Contacto {
+    display: flex;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+.formulario__Contacto {
+    width: 100%;
+    max-width: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+  
+.video__One__Piece {
+    width: 100%;
+    max-width: 50%;
+    padding: 20px;
+}
+@media screen and (max-width: 850px) {
+    .contenedor__Contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .formulario__Contacto {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+      .video__One__Piece {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.video__Youtube iframe {
+    max-width: 100%;
+  }
+
+/* Estilos del FOOTER */
+.footer__integrantes{
+    padding-top: 1rem;
+}
+.redes__Sociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
