@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "onepiece";
-  src: url("../../fonts/one-piece-font.ttf");
+  font-family: "one-piece-font";
+  src: url("../../../fonts/one-piece-font.ttf");
 }
 /* Definimos una clase base para los títulos */
 .titulo-base, .mugiwara, .titulo__h1 {
-  font-family: onepiece;
+  font-family: one-piece-font;
   font-size: 4rem;
 }
 
@@ -20,6 +20,7 @@
 }
 
 /* Estilos Sombreros de Paja que extienden de la clase base */
+/* Estilos del "Header" */
 header {
   font-size: 2rem;
   align-items: center;
@@ -71,6 +72,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   height: 100%;
 }
 
+/* Fin Estilos del "Header" */
 /* Animación Sección "Historia" */
 .contenedor__Imagenes__Historia {
   position: relative;
@@ -138,7 +140,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
 }
 
 /* Fin Animación "Sombreros de Paja" */
-/*Carrusel Página Inicio*/
+/* Carrusel Página Inicio */
 .carrusel__Container {
   position: relative;
 }
@@ -161,6 +163,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   text-align: center;
 }
 
+/* Fin Carrusel Página Inicio */
 /* Aquí estará el estilo de la página"Frutas del Diablo" con Flex-Box y Grid */
 .frutas__Del__Diablo {
   max-width: 1140px;
@@ -217,6 +220,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   text-align: center;
 }
 
+/* Fin Botón Volver datos de los personajes de One Piece */
 /* Estilos de la Sección CONTACTO */
 .contenedor {
   max-width: 1164px;
@@ -252,6 +256,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   max-width: 100%;
 }
 
+/* Fin Estilos de la Sección CONTACTO */
 /* Estilos del FOOTER */
 .footer__integrantes {
   padding-top: 1rem;
@@ -298,6 +303,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   text-shadow: 0 0 5px #f5f295;
 }
 
+/* Fin Estilos del FOOTER */
 /* Media Querie para sección "Sombreros de Paja" */
 @media screen and (max-width: 760px) {
   .tripulacion {
@@ -328,6 +334,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
     padding: 10px;
   }
 }
+/* Fin Media Querie para sección "Sombreros de Paja" */
 /* Media Querie para sección "Frutas del Diablo" */
 @media screen and (max-width: 760px) {
   .frutas__Del__Diablo {
@@ -343,6 +350,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
     margin-top: 20px;
   }
 }
+/* Fin Media Querie para sección "Frutas del Diablo" */
 /* Media Querie para sección "Sección Contacto" */
 @media screen and (max-width: 760px) {
   .contenedor__Contacto {
@@ -367,6 +375,7 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
     max-width: 100%;
   }
 }
+/* Fin Media Querie para sección "Sección Contacto" */
 /* Media Querie para sección "Historia" */
 @media (max-width: 760px) {
   .contenedor__Imagenes__Historia {
@@ -387,4 +396,5 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
     position: absolute;
     margin-left: 50px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/* Fin Media Querie para sección "Historia" *//*# sourceMappingURL=styles.css.map */
