@@ -3,9 +3,8 @@
     .tripulacion {
       display: flex;
       flex-wrap: wrap;
-      max-height: 100%;
-      overflow: auto;
       width: 100%;
+      height: 100%;
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
@@ -69,7 +68,6 @@
         }
         
         .video__One__Piece{
-           display: flex;
            justify-content: center;
            align-items: center;
            width: 100%;

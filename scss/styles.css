@@ -241,7 +241,6 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
 }
 .contenedor .contenedor__Contacto .formulario__Contacto {
   width: 100%;
-  max-width: 50%;
   padding: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -251,9 +250,24 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   width: 100%;
   max-width: 50%;
   padding: 20px;
+  /*.video__Youtube iframe {
+      max-width: 100%;*/
 }
-.contenedor .video__One__Piece .video__Youtube iframe {
-  max-width: 100%;
+.contenedor .video__One__Piece .video__Carrusel__Padre {
+  width: 100%;
+  margin: auto;
+}
+.contenedor .video__One__Piece .video__Carrusel__Padre .video__Carrusel__Hijo {
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.contenedor .video__One__Piece .video__Carrusel__Padre .video__Carrusel__Hijo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* Fin Estilos de la Sección CONTACTO */
@@ -309,9 +323,8 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   .tripulacion {
     display: flex;
     flex-wrap: wrap;
-    max-height: 100%;
-    overflow: auto;
     width: 100%;
+    height: 100%;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -368,7 +381,6 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
     margin-bottom: 20px;
   }
   .contenedor__Contacto .video__One__Piece {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
