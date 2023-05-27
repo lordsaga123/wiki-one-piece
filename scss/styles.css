@@ -220,6 +220,9 @@ header .encabezado .navbar-nav .boton:hover:before, header .encabezado .navbar-n
   width: 100%;
   text-align: center;
 }
+.boton__Carrusel:hover {
+  opacity: 50%;
+}
 
 /* Fin Botón Volver datos de los personajes de One Piece */
 /* Estilos de la Sección CONTACTO */
